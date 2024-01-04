@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.users.application.UserRegisterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.102">
+  <properties/>
+  <testcase name="registerSuccess()" classname="builders.io.bank.users.application.UserRegisterTest" time="0.099"/>
+  <testcase name="registerWhenExistUsername_shouldReturnUserExistException()" classname="builders.io.bank.users.application.UserRegisterTest" time="0.002"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.164+01:00  WARN 19080 --- [    Test worker] b.i.bank.users.application.UserRegister  : Username not created: ipsum exist
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

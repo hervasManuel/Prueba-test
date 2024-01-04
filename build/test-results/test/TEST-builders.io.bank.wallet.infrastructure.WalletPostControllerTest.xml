@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.wallet.infrastructure.WalletPostControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.039">
+  <properties/>
+  <testcase name="createWalletSuccess()" classname="builders.io.bank.wallet.infrastructure.WalletPostControllerTest" time="0.037"/>
+  <testcase name="createWalletNotExistWallet_shouldReturnWalletExistException()" classname="builders.io.bank.wallet.infrastructure.WalletPostControllerTest" time="0.001"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.422+01:00  INFO 19080 --- [    Test worker] b.i.b.w.i.WalletPostController           : New Wallet request for a user 9c25fdb4-3960-461e-9edc-dd451a86c5d7
+2023-02-24T20:28:58.424+01:00  INFO 19080 --- [    Test worker] b.i.b.w.i.WalletPostController           : New Wallet request for a user 9c25fdb4-3960-461e-9edc-dd451a86c5d7
+2023-02-24T20:28:58.424+01:00 ERROR 19080 --- [    Test worker] b.i.b.w.i.WalletPostController           : null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

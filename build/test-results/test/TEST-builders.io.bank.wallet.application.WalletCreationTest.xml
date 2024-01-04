@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.wallet.application.WalletCreationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.063">
+  <properties/>
+  <testcase name="createWalletWhenExistWalletFromUser_shouldReturnWalletExistException()" classname="builders.io.bank.wallet.application.WalletCreationTest" time="0.04"/>
+  <testcase name="createWallet()" classname="builders.io.bank.wallet.application.WalletCreationTest" time="0.023"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.326+01:00  INFO 19080 --- [    Test worker] b.i.b.wallet.application.WalletCreation  : Creating a new wallet for user: 9c25fdb4-3960-461e-9edc-dd451a86c5d7
+2023-02-24T20:28:58.326+01:00  WARN 19080 --- [    Test worker] b.i.b.wallet.application.WalletCreation  : Wallet already exist for user: 9c25fdb4-3960-461e-9edc-dd451a86c5d7
+2023-02-24T20:28:58.349+01:00  INFO 19080 --- [    Test worker] b.i.b.wallet.application.WalletCreation  : Creating a new wallet for user: 9c25fdb4-3960-461e-9edc-dd451a86c5d7
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

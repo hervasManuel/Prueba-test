@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.users.infrastructure.UserPostControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.04">
+  <properties/>
+  <testcase name="newUserSuccess()" classname="builders.io.bank.users.infrastructure.UserPostControllerTest" time="0.038"/>
+  <testcase name="newUserWhenUserExist_shouldReturnUserExistException()" classname="builders.io.bank.users.infrastructure.UserPostControllerTest" time="0.001"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.204+01:00  INFO 19080 --- [    Test worker] b.i.b.u.i.UserPostController             : New User request: nameMock
+2023-02-24T20:28:58.204+01:00  INFO 19080 --- [    Test worker] b.i.b.u.i.UserPostController             : User created correctly: nameMock
+2023-02-24T20:28:58.206+01:00  INFO 19080 --- [    Test worker] b.i.b.u.i.UserPostController             : New User request: nameMock
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

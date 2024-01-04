@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.wallet.application.WalletUpdateBalanceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.007">
+  <properties/>
+  <testcase name="subtractBalanceWhenNotEnoughBalance()" classname="builders.io.bank.wallet.application.WalletUpdateBalanceTest" time="0.001"/>
+  <testcase name="addBalanceWhenNotExistWallet_shouldReturnWalletNotExistException()" classname="builders.io.bank.wallet.application.WalletUpdateBalanceTest" time="0.0"/>
+  <testcase name="subtractBalance()" classname="builders.io.bank.wallet.application.WalletUpdateBalanceTest" time="0.001"/>
+  <testcase name="addBalanceSuccess()" classname="builders.io.bank.wallet.application.WalletUpdateBalanceTest" time="0.001"/>
+  <testcase name="subtractBalanceWhenNotExistWallet()" classname="builders.io.bank.wallet.application.WalletUpdateBalanceTest" time="0.001"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.355+01:00  INFO 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Subtract balance of addressMock
+2023-02-24T20:28:58.355+01:00  WARN 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Insufficient balance for transaction
+2023-02-24T20:28:58.356+01:00  INFO 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Adding balance of addressMock
+2023-02-24T20:28:58.356+01:00  WARN 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Wallet addressMock not exist
+2023-02-24T20:28:58.357+01:00  INFO 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Subtract balance of addressMock
+2023-02-24T20:28:58.359+01:00  INFO 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Adding balance of addressMock
+2023-02-24T20:28:58.361+01:00  INFO 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Subtract balance of addressMock
+2023-02-24T20:28:58.361+01:00  WARN 19080 --- [    Test worker] b.i.b.w.application.WalletUpdateBalance  : Wallet addressMock not exist
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

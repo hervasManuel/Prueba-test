@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.wallet.infrastructure.WalletGetControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.022">
+  <properties/>
+  <testcase name="getBalanceSuccess()" classname="builders.io.bank.wallet.infrastructure.WalletGetControllerTest" time="0.021"/>
+  <testcase name="getBalanceWhenWalletNotExist_shouldReturnWalletNotExistException()" classname="builders.io.bank.wallet.infrastructure.WalletGetControllerTest" time="0.001"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.383+01:00  INFO 19080 --- [    Test worker] b.i.b.w.i.WalletGetController            : New info request for wallet addressMock
+2023-02-24T20:28:58.384+01:00  INFO 19080 --- [    Test worker] b.i.b.w.i.WalletGetController            : New info request for wallet addressMock
+2023-02-24T20:28:58.384+01:00 ERROR 19080 --- [    Test worker] b.i.b.w.i.WalletGetController            : null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

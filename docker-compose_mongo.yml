@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+  mongodb:
+    image: mongo:6.0
+    restart: always
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: iobuilders
+    ports:
+      - 27017:27017
+    networks:
+      - bank-test
+
+  mongo-express:
+    image: mongo-express:0.54.0
+    container_name: mongo-express
+    restart: always
+    depends_on:
+      mongodb:
+        condition: service_started
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongodb:27017/iobuilders?authSource=admin
+    networks:
+      - bank-test
+networks:
+  bank-test:
+    external:
+      name: bank_test

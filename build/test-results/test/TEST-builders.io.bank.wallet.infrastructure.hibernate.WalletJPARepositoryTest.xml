@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.wallet.infrastructure.hibernate.WalletJPARepositoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.072">
+  <properties/>
+  <testcase name="searchByAddress()" classname="builders.io.bank.wallet.infrastructure.hibernate.WalletJPARepositoryTest" time="0.069"/>
+  <testcase name="findAll()" classname="builders.io.bank.wallet.infrastructure.hibernate.WalletJPARepositoryTest" time="0.001"/>
+  <testcase name="searchByUserId()" classname="builders.io.bank.wallet.infrastructure.hibernate.WalletJPARepositoryTest" time="0.001"/>
+  <testcase name="save()" classname="builders.io.bank.wallet.infrastructure.hibernate.WalletJPARepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

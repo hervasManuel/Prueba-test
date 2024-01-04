@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.wallet.application.WalletDetailTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:58" hostname="MacBook-Pro-de-autentia-2.local" time="0.003">
+  <properties/>
+  <testcase name="getBalanceWhenNotExistWallet_shouldReturnWalletNotExistException()" classname="builders.io.bank.wallet.application.WalletDetailTest" time="0.002"/>
+  <testcase name="getBalance()" classname="builders.io.bank.wallet.application.WalletDetailTest" time="0.001"/>
+  <system-out><![CDATA[2023-02-24T20:28:58.351+01:00  WARN 19080 --- [    Test worker] b.i.b.wallet.application.WalletDetail    : Wallet addressMock not exist
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

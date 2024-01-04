@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="builders.io.bank.shared.infrastructure.bus.event.virtualmachine.VirtualMachineActionsServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T19:28:57" hostname="MacBook-Pro-de-autentia-2.local" time="0.034">
+  <properties/>
+  <testcase name="executeTransactionOnTransactionSent_withTransfer()" classname="builders.io.bank.shared.infrastructure.bus.event.virtualmachine.VirtualMachineActionsServiceImplTest" time="0.031"/>
+  <testcase name="executeTransactionOnTransactionSent_withAddBalance()" classname="builders.io.bank.shared.infrastructure.bus.event.virtualmachine.VirtualMachineActionsServiceImplTest" time="0.002"/>
+  <system-out><![CDATA[2023-02-24T20:28:57.648+01:00  INFO 19080 --- [    Test worker] i.b.e.v.VirtualMachineActionsServiceImpl : Bank Virtual Machine: Transaction event received
+2023-02-24T20:28:57.649+01:00  INFO 19080 --- [    Test worker] b.i.b.v.application.TransferTrx          : Execution TRANSFER transaction -> From Address: fromMock Value: -1
+2023-02-24T20:28:57.649+01:00  INFO 19080 --- [    Test worker] b.i.b.v.application.TransferTrx          :                                -> To   Address: toMock Value: 1
+2023-02-24T20:28:57.653+01:00  INFO 19080 --- [    Test worker] i.b.e.v.VirtualMachineActionsServiceImpl : Bank Virtual Machine: Transaction event received
+2023-02-24T20:28:57.654+01:00  INFO 19080 --- [    Test worker] b.i.b.v.application.AddBalanceTrx        : Execution ADD_BALANCE transaction: Address: toMock Value: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
