@@ -42,19 +42,19 @@ class UserRegisterTest {
     void registerSuccess() {
         AuthUsername username = AuthUsernameMother.random();
         UserId id = new UserId(UUID);
-        User user = new User(id,username);
+        User user = new User(new UserId(UUID),username);
         when(repository.findByUsername(username)).thenReturn(Optional.empty());
         when(uuidGenerator.generate()).thenReturn(UUID);
         try (MockedStatic<UserId> userIdMockedStatic = mockStatic(UserId.class)) {
             userIdMockedStatic.when(() -> UserId.create(UUID))
-                    .thenReturn(id);
+                    .thenReturn(new UserId(UUID));
         }
         try (MockedStatic<User> userMock = mockStatic(User.class)) {
-            userMock.when(() -> User.create(id,username))
-                    .thenReturn(user);
+            userMock.when(() -> User.create(new UserId(UUID),username))
+                    .thenReturn(new User(new UserId(UUID),username));
         }
         instance.register(username);
-        verify(repository).save(user);
+        verify(repository).save(new User(new UserId(UUID),username));
     }
 
     @Test
